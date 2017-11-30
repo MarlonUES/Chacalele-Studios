@@ -18,9 +18,10 @@ padding: 0 !important;
 }
 
 .img-fluid{
-	width: 100%;
+	width: 70%;
 	height: auto;
 	float: left;
+	margin-left: 10%;
 }
 
 .mb{
@@ -76,4 +77,13 @@ padding: 0 !important;
 
 .conoce{
 	color: rgb(188, 210, 251) !important; 
+}
+
+.parrafo-d{
+	font-size: 20px;
+}
+
+.encabezado-d{
+	font-weight: bold;
+	color: rgb(108, 188, 66);
 }
