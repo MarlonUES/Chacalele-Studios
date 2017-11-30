@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="Chacalele" content="">
+  <title>Susan Diaz</title>
+  <!-- Bootstrap core CSS-->
+  <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="../css/menu-sidebar.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper"><!--  wrapper para menú vertical -->
+      <div class="overlay"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="sidebar-wrapper">
+          <ul class="nav sidebar-nav">
+            <li class="sidebar-brand"><a href="#">Inicio</a></li>
+            <li><a href="views/perfildeysi.html">Fotografia</a></li>
+            <li><a href="#">Susan</a></li>
+            <li><a href="#">Marlon</a></li>
+          </ul>
+
+        </nav>
+        <!-- aquí termina el menú -->
+       <!--  aquí inicia el menú  responsivo -->
+        <div id="page-content-wrapper">
+          <button type="button" data-toggle="offcanvas" class="hamburger is-closed">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+          <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="img/logo.png" class="adaptar img-fluid">
+        </div>
+        <div class="col-md-7">
+          <h2>Chacalele Studio</h2>
+          <br>
+          <p>¡Bienvenidos a la p&aacute;gina oficial de <b>Chacalele Studio!</b></p>
+          <br>
+          <p>Nos dedicamos a la elaboraci&oacute;n de publicidad para redes sociales, ilustraciones digitales y manuales e imagen corporativa para empresas (branding) ¡Mira los perfiles de cada uno de nuestros integrantes!</p>
+        </div>
+      </div>
+    <br>
+
+    <div class="row mb-4"> <!-- mb de margin bottom -->
+    <div class="col-md-4">
+        <div class="card text-center">
+           <img src="img/deysi.jpg" class="adaptar img-fluid">
+            <div class="card-body">
+              <h4><b>Deysi Alcal&aacute;</b></h4>
+              <br>
+              <p class="text-member">Branding</p>
+              <br>
+              <p>¿Necesitas dar a conocer lo profesional que es tu empresa? Me comprometo a desarrollar tu imagen corporativa  cuidando minuciosamente hasta el m&aacute;s m&iacute;nimo detalle.</p>
+              <br>
+              <a href="views/perfildeysi.html" class="conoce">Conoce mas</a>
+            </div>
+        </div>
+      </div>
+    
+
+      <div class="col-md-4">
+        <div class="card text-center">
+           <img src="img/marlon.jpg" class="adaptar img-fluid">
+            <div class="card-body">
+              <h4><b>Marlon Ruiz</b></h4>
+              <br>
+              <p class="text-member">Ilustración</p>
+              <br>
+              <p>Diseñador Grafico especializado en la ilustraci&oacute;n</p>
+              <br>
+              <a href="#" class="conoce">Conoce mas</a>
+            </div>
+        </div>
+      </div>
+    
+     <div class="col-md-4">
+        <div class="card text-center">
+           <img src="img/susan.jpg" class="adaptar img-fluid">
+            <div class="card-body">
+              <h4><b>Susan D&iacute;az</b></h4>
+              <br>
+              <p class="text-member">Diseño Publicitario</p>
+              <br>
+              <p>Diseñadora Gr&aacute;fica especializada en diseño publicitario</p>
+              <br>
+              <a href="#" class="conoce">Conoce mas</a>
+            </div>
+        </div>
+      </div>
+    
+
+    </div>
+
+        </div>
+      <!--  aquí termina el menú  responsivo -->
+    <!-- Bootstrap core JavaScript-->
+
+    <footer class="py-5 bg-dark">
+      <div>
+        <p class="text-center text-white">Copyright &copy; Chacalele Studio 2017
+      
+        </p>
+      </div>  
+    </footer>
+    
+    <script src="js/jquery/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/sb-admin.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function () {
+          var trigger = $('.hamburger'),
+          overlay = $('.overlay'),
+          isClosed = false;
+
+          trigger.click(function () {
+          hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+  </script> 
+  </div>
+
+
+
+</body>
+
+</html>
+
+<!-- Estructura de Bootstrap
+1. Se decide o no si se declara antes de una div con una clase personal
+2. Declara un contenedor de los 2 existentes class="Container"
+class="container- fluid"
+3. Declara una fila 
+class="row"
+4. Declaran las columnas cuya sumatoria será siempre 12
+     class="col-md-6"
+     class="col-md-6"
+5. Se procede a crear nuestro diseño -->
