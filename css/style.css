@@ -41,7 +41,7 @@ padding: 0 !important;
 }
 
 .text-member{
-	color: rgb(188, 210, 251);
+	color: rgb(255, 255, 255);
 	font-size: 9pt;
 	font-weight: lighter;
 }
@@ -75,7 +75,7 @@ padding: 0 !important;
 }
 
 .conoce{
-	color: rgb(188, 210, 251) !important; 
+	color: rgb(255, 255, 255) !important; 
 }
 
 .parrafo-d{
@@ -110,3 +110,9 @@ padding: 0 !important;
 .conoce-deysi{
 	color: rgb(3, 139, 22) !important; 
 }
+
+.card-body{
+	background-color: rgb(237,57,253);
+	
+}
+
