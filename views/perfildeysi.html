@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="Chacalele" content="">
-  <title>Pagina grupal</title>
+  <title>Deysi Alcalá</title>
   <!-- Bootstrap core CSS-->
   <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
   <link href="../css/menu-sidebar.css" rel="stylesheet">
@@ -18,8 +18,8 @@
       <div class="overlay"></div>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="sidebar-wrapper">
           <ul class="nav sidebar-nav">
-            <li class="sidebar-brand"><a href="#">Inicio</a></li>
-            <li><a href="#">Deysi</a></li>
+            <li class="sidebar-brand"><a href="../index.html">Inicio</a></li>
+            <li><a href="../views/perfildeysi.html">Deysi</a></li>
             <li><a href="#">Susan</a></li>
             <li><a href="#">Marlon</a></li>
           </ul>
@@ -36,14 +36,55 @@
           <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <img src="img/logo.png" class="adaptar img-fluid">
+          <img src="../img/fotodeysi.png" class="adaptar img-fluid">
         </div>
         <div class="col-md-7">
-          <h2>Deysi Alcalá</h2>
+          <h2 class="encabezado-d">Deysi Alcalá</h2>
           <br>
-          <p></p>
+          <p class="parrafo-d">Me especializo en el diseño de identidad corporativa (branding). Trabajo sobre todo para micro y pequeñas empresas; es muy satisfactorio ayudar en el desarrollo de la identidad de marca de los emprendedores emergentes . A continuación puedes ver algunos proyectos en los que he trabajado, ingresa al que sea de tu interés para ver más detalles</p>
           <br>
           <p></p>
         </div>
       </div>
     <br>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../js/jquery/jquery-1.12.4.js"></script>
+    <script src="../js/bootstrap/bootstrap.js"></script>
+    <script src="../js/sb-admin.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function () {
+          var trigger = $('.hamburger'),
+          overlay = $('.overlay'),
+          isClosed = false;
+
+          trigger.click(function () {
+          hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+  </script> 
+  </div>
+</body>
+
+</html>
