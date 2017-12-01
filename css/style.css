@@ -122,3 +122,21 @@ padding: 0 !important;
 	float: left;
 	margin-left: 15%;
 }
+.texto-marlon-centro{
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction:column;
+	flex-direction: column; 
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: rgb(180, 225, 125);
+	border: 1px solid rgb(75, 75, 75);
+	border-radius: 5px;
+}
+.wall-text{
+	background-color: rgb(40, 112, 171);
+}
+.Know-brand{
+	color: rgb(255, 255, 255) !important;
+}
